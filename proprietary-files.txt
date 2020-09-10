@@ -430,6 +430,8 @@ vendor/bin/charge_only_mode
 vendor/bin/hvdcp_opti
 
 # Perf
+-framework/QPerformance.jar
+-framework/UxPerformance.jar
 lib/libqti_performance.so
 lib/libqti-perfd-client_system.so
 lib64/libqti_performance.so
