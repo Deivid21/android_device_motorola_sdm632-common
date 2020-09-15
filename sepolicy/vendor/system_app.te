@@ -11,3 +11,8 @@ dontaudit system_app {
   apex_service
   system_suspend_control_service
 }:service_manager find;
+
+#Kcal
+type sysfs_kcal, fs_type, sysfs_type;
+allow system_app sysfs_kcal:dir search;
+allow system_app sysfs_kcal:file rw_file_perms;
