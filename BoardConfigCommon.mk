@@ -147,9 +147,6 @@ TARGET_ENABLE_MEDIADRM_64 := true
 # Face unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# RR Wallpapers
-BUILD_RR_WALLPAPERS := true
-
 # Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
     ifneq ($(TARGET_BUILD_VARIANT),eng)
