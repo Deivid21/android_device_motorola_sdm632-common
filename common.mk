@@ -44,9 +44,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 # A/B updater
 AB_OTA_UPDATER := true
 
-# RR Wallpapers
-BUILD_RR_WALLPAPERS := true
-
 AB_OTA_PARTITIONS += \
     boot \
     dtbo \
