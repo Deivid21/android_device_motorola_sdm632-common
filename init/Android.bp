@@ -22,9 +22,9 @@ motorola_sdm632_init_library_static {
         "DeviceLibinit.cpp"
     ],
     include_dirs: [
-        "system/core/base/include",
         "system/core/init",
-        "device/motorola/sdm632-common"
+        "device/motorola/sdm632-common",
+        "system/libbase/include"
     ],
     shared_libs: [
         "libbase",
