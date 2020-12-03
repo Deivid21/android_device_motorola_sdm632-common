@@ -439,7 +439,6 @@ vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 
 # Offmode charging
-vendor/bin/charge_only_mode
 vendor/bin/hvdcp_opti
 
 # Perf
