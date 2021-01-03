@@ -80,6 +80,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
     ro.qualcomm.cabl=0
 
+# DTV
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.hw.dtv=true
+
 # Factory reset partition
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/platform/soc/7824900.sdhci/by-name/frp
