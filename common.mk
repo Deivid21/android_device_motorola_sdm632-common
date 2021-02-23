@@ -270,6 +270,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libstagefright_ccodec
 
+# Moto TimeWeather
+PRODUCT_PACKAGES += \
+    TimeWeather
+
 # Network
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
