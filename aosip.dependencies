@@ -10,5 +10,11 @@
   {
     "repository": "android_system_qcom",
     "target_path": "system/qcom"
+  },
+  {
+    "repository": "motorola_timeweather",
+    "target_path": "packages/apps/TimeWeather",
+    "branch": "ten",
+    "remote": "motorola"
   }
 ]
