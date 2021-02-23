@@ -272,6 +272,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MotoActions
 
+# Moto TimeWeather
+PRODUCT_PACKAGES += \
+    TimeWeather
+
 # Network
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
