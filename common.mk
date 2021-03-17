@@ -275,6 +275,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     TimeWeather
 
+# Moto Live Wallpaper
+PRODUCT_PACKAGES += \
+    MotoLiveWallpaper3
+
 # Network
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
