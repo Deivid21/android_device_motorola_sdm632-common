@@ -20,5 +20,11 @@
     "target_path": "packages/apps/TimeWeather",
     "branch": "eleven",
     "remote": "motorola"
+  },
+  {
+    "repository": "motorola_livewallpaper3",
+    "target_path": "packages/apps/MotoLiveWallpaper3",
+    "branch": "eleven",
+    "remote": "motorola"
   }
 ]
