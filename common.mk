@@ -33,6 +33,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Properties
 -include $(LOCAL_PATH)/properties.mk
 
+TARGET_USES_QCOM_CHIPSET := true
 PRODUCT_BOARD_PLATFORM := msm8953
 
 # Overlays
