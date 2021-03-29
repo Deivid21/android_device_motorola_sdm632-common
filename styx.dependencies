@@ -30,5 +30,11 @@
     "target_path": "packages/apps/MotoLiveWallpaper3",
     "remote": "gitlab",
     "branch": "eleven"
+  },
+  {
+    "repository": "NemesisDevelopers/motorola/motorola_motosignatureapp",
+    "target_path": "packages/apps/MotoSignatureApp",
+    "remote": "gitlab",
+    "branch": "eleven"
   }
 ]
