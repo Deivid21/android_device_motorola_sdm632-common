@@ -4,6 +4,10 @@
     "target_path": "kernel/motorola/sdm632"
   },
   {
+    "repository": "vendor_motorola",
+    "target_path": "vendor/motorola"
+  },
+  {
     "repository": "hardware_motorola",
     "target_path": "hardware/motorola"
   },
