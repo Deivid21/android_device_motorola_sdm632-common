@@ -21,3 +21,5 @@ dontaudit system_app {
 type sysfs_kcal, fs_type, sysfs_type;
 allow system_app sysfs_kcal:dir search;
 allow system_app sysfs_kcal:file rw_file_perms;
+
+binder_call(system_app, hal_power_default)
