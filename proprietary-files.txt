@@ -131,21 +131,33 @@ vendor/lib64/vendor.qti.latency@2.0.so
 
 # Dolby
 -app/MotoDolbyV3/MotoDolbyV3.apk
-etc/permissions/com.dolby.daxservice.xml
 etc/permissions/com.motorola.dolby.dolbyui.features.xml
--priv-app/daxService/daxService.apk
+etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml
+lib/libstagefright_foundation.so
+lib/libstagefright_omx.so
+lib/libstagefright_softomx.so
+lib/vndk-29/libstagefright_foundation.so
+lib/vndk-29/libstagefright_omx.so
+lib64/libstagefright_foundation.so
+lib64/libstagefright_omx.so
+lib64/vndk-29/libstagefright_foundation.so
+lib64/vndk-29/libstagefright_omx.so
+product/etc/permissions/com.dolby.daxservice.xml
+-product/priv-app/daxService/daxService.apk
 vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service
-vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc
 vendor/etc/dolby/dax-default.xml
+vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc
 vendor/lib/libdapparamstorage.so
 vendor/lib/libstagefrightdolby.so
-vendor/lib/soundfx/libswdap.so
+vendor/lib/libstagefright_softomx.so
 vendor/lib/vendor.dolby.hardware.dms@1.0.so
+vendor/lib/soundfx/libswdap.so
 vendor/lib64/libdapparamstorage.so
 vendor/lib64/libdlbdsservice.so
-vendor/lib64/soundfx/libswdap.so
-vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so
+vendor/lib64/libstagefright_softomx.so
 vendor/lib64/vendor.dolby.hardware.dms@1.0.so
+vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so
+vendor/lib64/soundfx/libswdap.so
 
 # DRM - HDCP
 vendor/lib/libmm-hdcpmgr.so
