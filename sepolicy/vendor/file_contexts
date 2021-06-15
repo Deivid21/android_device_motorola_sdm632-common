@@ -7,7 +7,15 @@
 /dev/block/platform/soc/7824900\.sdhci/mmcblk0p50         u:object_r:mba_debug_dev:s0
 
 # libmcf
+/vendor/lib(64)?/libmcf-local\.so		u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmcf-foundation\.so		u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmcf-qc-fd-offline\.so                        u:object_r:same_process_hal_file:s0
+
+# libmmcamera
+/vendor/lib(64)?/libmmcamera_dbg\.so		u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmmcamera_imglib\.so		u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmmcamera_faceproc\.so		u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmmcamera_faceproc2\.so		u:object_r:same_process_hal_file:s0
 
 # Persist
 /persist(/*)?                u:object_r:mnt_vendor_file:s0
