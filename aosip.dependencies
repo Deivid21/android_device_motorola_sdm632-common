@@ -26,5 +26,11 @@
     "target_path": "packages/apps/MotoLiveWallpaper3",
     "branch": "eleven",
     "remote": "motorola"
+  },
+  {
+    "repository": "packages_apps_MotoWavesV2",
+    "target_path": "packages/apps/MotoWavesV2",
+    "branch": "eleven",
+    "remote": "motorola"
   }
 ]

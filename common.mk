@@ -279,6 +279,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MotoLiveWallpaper3
 
+# Moto Waves
+PRODUCT_PACKAGES += \
+    MotoWavesV2
+
+$(call inherit-product, packages/apps/MotoWavesV2/config.mk)
+
 # Network
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
