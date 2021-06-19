@@ -283,6 +283,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# Moto Dolby
+PRODUCT_PACKAGES += \
+    MotoDolbyV3
+
+$(call inherit-product, packages/apps/MotoDolbyV3/config.mk)
+
 # Perf
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
