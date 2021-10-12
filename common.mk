@@ -201,7 +201,8 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    fstab.qcom.ramdisk
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
