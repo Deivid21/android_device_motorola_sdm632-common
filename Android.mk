@@ -70,13 +70,6 @@ $(DSP_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(DSP_SYMLINK)
 
-EGL_SYMLINK := $(TARGET_OUT_VENDOR)/lib/libGLESv2_adreno.so
-$(EGL_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf egl/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(EGL_SYMLINK)
-
 WIFI_IMAGES := \
     WCNSS_qcom_wlan_nv.bin WCNSS_qcom_wlan_nv_Argentina.bin  \
 	WCNSS_qcom_wlan_nv_Brazil.bin WCNSS_qcom_wlan_nv_India.bin \
