@@ -363,6 +363,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
     $(LOCAL_PATH)/recovery/root/init.recovery.qcom.usb.rc:root/init.recovery.qcom.usb.rc
 
+# RFS MSM MPSS symlinks
+PRODUCT_PACKAGES += \
+    rfs_msm_mpss_readonly_vendor_fsg_symlink
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4.vendor \
