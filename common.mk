@@ -120,15 +120,13 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.common@1.1.vendor \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
-    memtrack.msm8953 \
     libdisplayconfig \
     libqdMetaData.system \
     libvulkan \
-    libtinyxml
+    libtinyxml \
+    vendor.qti.hardware.memtrack-service
 
 # DRM
 PRODUCT_PACKAGES += \
