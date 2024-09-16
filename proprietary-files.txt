@@ -44,12 +44,6 @@ vendor/lib64/com.qualcomm.qti.ant@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 
-# Camera - MotCamera2
--system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
-system/etc/permissions/com.motorola.motosignature.xml:vendor/etc/permissions/com.motorola.motosignature.xml
-system/framework/com.motorola.motosignature.jar:vendor/framework/com.motorola.motosignature.jar
-product/etc/permissions/privapp-permissions-com.motorola.camera2.xml
-
 # CNE
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
@@ -405,11 +399,6 @@ vendor/lib64/libOmxWmaDec.so
 -vendor/lib64/libgpustats.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmmosal_proprietary.so
-
-# Moto Permissions
-product/etc/permissions/com.motorola.camera2.denali.xml:vendor/etc/permissions/com.motorola.camera2.denali.xml
-product/etc/permissions/com.motorola.moto-uirefresh.xml
-product/etc/permissions/com.motorola.motodisplay.xml
 
 # Offmode charging
 vendor/bin/hvdcp_opti
