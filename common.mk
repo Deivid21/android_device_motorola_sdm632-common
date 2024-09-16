@@ -142,10 +142,9 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
-# GMS
-ifeq ($(WITH_GMS),true)
-GMS_MAKEFILE=gms_minimal.mk
-endif
+# GApps
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
@@ -168,9 +167,6 @@ PRODUCT_PACKAGES += \
     izat.conf \
     lowi.conf \
     sap.conf
-
-# GMS
-PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 # Health
 PRODUCT_PACKAGES += \
