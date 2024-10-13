@@ -256,6 +256,9 @@ PRODUCT_PACKAGES += \
     MotoActions \
     MotoCommonOverlay
 
+# Moto Live Wallpapers 3
+$(call inherit-product, vendor/motorola/MotoLiveWallpaper3/motolivewallpaper3.mk)
+
 # netmgrd
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
