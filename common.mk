@@ -259,6 +259,9 @@ PRODUCT_PACKAGES += \
 # Moto Live Wallpapers 3
 $(call inherit-product, vendor/motorola/MotoLiveWallpaper3/motolivewallpaper3.mk)
 
+# Moto Time Weather
+$(call inherit-product, vendor/motorola/TimeWeather/timeweather.mk)
+
 # netmgrd
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
