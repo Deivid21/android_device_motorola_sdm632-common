@@ -256,6 +256,9 @@ PRODUCT_PACKAGES += \
     MotoActions \
     MotoCommonOverlay
 
+# Moto Audio Recorder
+$(call inherit-product, vendor/motorola/AudioRecorder/audiorecorder.mk)
+
 # Moto Live Wallpapers 3
 $(call inherit-product, vendor/motorola/MotoLiveWallpaper3/motolivewallpaper3.mk)
 
