@@ -67,7 +67,6 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i "s/\/product\/framework\//\/system_ext\/framework\//g" "${2}"
             ;;
-        # Fix camera recording
         vendor/etc/data/dsi_config.xml|vendor/etc/data/netmgr_config.xml)
             [ "$2" = "" ] && return 0
             fix_xml "${2}"
@@ -76,7 +75,7 @@ function blob_fixup() {
         vendor/lib64/libril-qc-hal-qmi.so)
             [ "$2" = "" ] && return 0
             for  LIBRIL_SHIM in $(grep -L "libcutils_shim.so" "${2}"); do
-            	"${PATCHELF}" --add-needed "libcutils_shim.so" "${LIBRIL_SHIM}"
+                "${PATCHELF}" --add-needed "libcutils_shim.so" "$LIBRIL_SHIM"
             done
             ;;
         # Fix xml version
@@ -89,7 +88,7 @@ function blob_fixup() {
         system_ext/lib64/lib-imscamera.so | system_ext/lib64/lib-imsvideocodec.so | system_ext/lib/lib-imscamera.so | system_ext/lib/lib-imsvideocodec.so)
             [ "$2" = "" ] && return 0
             for LIBGUI_SHIM in $(grep -L "libgui_shim.so" "${2}"); do
-            	"${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
+                "${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
             done
             ;;
         # Fix missing symbols
@@ -97,17 +96,22 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
             ;;
+        # Move to vendor
+        vendor/etc/permissions/com.motorola.motosignature.xml)
+            [ "$2" = "" ] && return 0
+            sed -i 's|/system/framework|/vendor/framework|' "${2}"
+            ;;
         # qsap shim
         vendor/lib64/libmdmcutback.so)
             [ "$2" = "" ] && return 0
             for  LIBQSAP_SHIM in $(grep -L "libqsap_shim.so" "${2}"); do
-            	"${PATCHELF}" --add-needed "libqsap_shim.so" "${LIBQSAP_SHIM}"
+                "${PATCHELF}" --add-needed "libqsap_shim.so" "$LIBQSAP_SHIM"
             done
             ;;
         # libutils-v32
         vendor/lib/sensors.rp.so | vendor/lib64/sensors.rp.so)
             [ "$2" = "" ] && return 0
-            	"${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
+            "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
             ;;
         vendor/lib*/libwvhidl.so)
             [ "$2" = "" ] && return 0
