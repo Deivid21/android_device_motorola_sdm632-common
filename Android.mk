@@ -70,18 +70,4 @@ $(DSP_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(DSP_SYMLINK)
 
-WIFI_IMAGES := \
-    WCNSS_qcom_wlan_nv.bin WCNSS_qcom_wlan_nv_Argentina.bin  \
-	WCNSS_qcom_wlan_nv_Brazil.bin WCNSS_qcom_wlan_nv_India.bin \
-	WCNSS_qcom_wlan_nv_epa.bin	WCNSS_wlan_dictionary.dat
-
-WIFI_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/wlan/prima/,$(notdir $(WIFI_IMAGES)))
-$(WIFI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating WCNSS Symlinks: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf /vendor/etc/wifi/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(WIFI_SYMLINKS)
-
 endif
