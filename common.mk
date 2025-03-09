@@ -152,9 +152,6 @@ $(call soong_config_set_bool,libfmjni,no_fm_firmware,true)
 $(call soong_config_set,libfmjni,vendor,qcom)
 
 # GApps
-WITH_GMS := true
-TARGET_USES_PICO_GAPPS := true
-
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 # GPS
@@ -251,6 +248,9 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
+
+# MindTheGapps
+ $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 
 # MotoActions
 PRODUCT_PACKAGES += \
