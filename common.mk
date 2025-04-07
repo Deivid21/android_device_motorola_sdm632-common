@@ -195,7 +195,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.lineage
+    android.hardware.light-service.lineage
 
 # Media
 PRODUCT_COPY_FILES += \
